@@ -1,0 +1,46 @@
+{
+  "modules": {
+    "headerPanel": {
+      "options": {
+        "localeToggleEnabled": false,
+        "settingsButtonEnabled": false,
+        "searchTextEnabled": false,
+        "autoCompleteTextEnabled": false,
+        "modeButtonEnabled": false
+      }
+    },
+
+    "contentLeftPanel": {
+      "options": {
+        "panelOpen": false,
+        "thumbsEnabled": false,
+        "treeEnabled": false,
+        "pageModeEnabled": false
+      }
+    },
+
+    "pagingHeaderPanel": {
+      "options": {
+        "pagingToggleEnabled": false,
+        "pageModeEnabled": false,
+        "galleryButtonEnabled": false,
+        "imageSelectionBoxEnabled": false,
+        "modeOptionsEnabled": false
+      }
+    },
+
+    "mobileFooterPanel": {
+      "options": {
+        "bookmarkEnabled": false,
+        "downloadEnabled": false,
+        "embedEnabled": false,
+        "feedbackEnabled": false,
+        "fullscreenEnabled": true,
+        "moreInfoEnabled": true,
+        "openEnabled": false,
+        "printEnabled": false,
+        "shareEnabled": false
+      }
+    }
+  }
+}

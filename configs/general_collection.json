@@ -1,0 +1,60 @@
+{
+    "options": {
+    "embedded": true,
+    "theme": "uv-theme-dark",
+
+    "headerPanelEnabled": true,
+    "footerPanelEnabled": true,
+    "leftPanelEnabled": true,
+    "rightPanelEnabled": false,
+
+    "navigatorEnabled": false,
+    "searchWithinEnabled": false,
+
+    "saveUserSettings": false,
+    "useArrowKeysToNavigate": false,
+
+    "overrideFullScreen": false,
+
+    "defaultToTreeIfCollection": true
+  },
+
+  "modules": {
+    "headerPanel": {
+      "options": {
+        "localeToggleEnabled": false,
+        "settingsButtonEnabled": false,
+        "searchTextEnabled": false,
+        "autoCompleteTextEnabled": false,
+        "modeButtonEnabled": false
+      }
+    },
+
+    "contentLeftPanel": {
+      "options": {
+        "panelOpen": false,
+
+        "thumbsEnabled": true,
+        "treeEnabled": true,
+        "pageModeEnabled": false,
+
+        "defaultToTreeEnabled": true,
+        "defaultToTreeIfGreaterThan": 0
+      }
+    },
+
+    "mobileFooterPanel": {
+      "options": {
+        "bookmarkEnabled": false,
+        "downloadEnabled": false,
+        "embedEnabled": false,
+        "feedbackEnabled": false,
+        "fullscreenEnabled": true,
+        "moreInfoEnabled": true,
+        "openEnabled": false,
+        "printEnabled": false,
+        "shareEnabled": false
+      }
+    }
+  }
+}

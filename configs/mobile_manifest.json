@@ -1,0 +1,69 @@
+{
+  "options": {
+    "embedded": true,
+    "theme": "uv-theme-dark",
+
+    "headerPanelEnabled": true,
+    "footerPanelEnabled": true,
+    "leftPanelEnabled": false,
+    "rightPanelEnabled": false,
+
+    "navigatorEnabled": false,
+    "pagingEnabled": true,
+    "pagingOptionEnabled": false,
+
+    "clickToZoomEnabled": true,
+    "searchWithinEnabled": false,
+    "zoomToSearchResultEnabled": false,
+
+    "saveUserSettings": false,
+    "useArrowKeysToNavigate": false,
+
+    "overrideFullScreen": false
+  },
+
+  "modules": {
+    "headerPanel": {
+      "options": {
+        "localeToggleEnabled": false,
+        "settingsButtonEnabled": false,
+        "searchTextEnabled": false,
+        "autoCompleteTextEnabled": false,
+        "modeButtonEnabled": false
+      }
+    },
+
+    "contentLeftPanel": {
+      "options": {
+        "panelOpen": false,
+        "thumbsEnabled": false,
+        "treeEnabled": false,
+        "pageModeEnabled": false
+      }
+    },
+
+    "pagingHeaderPanel": {
+      "options": {
+        "pagingToggleEnabled": false,
+        "pageModeEnabled": false,
+        "galleryButtonEnabled": false,
+        "imageSelectionBoxEnabled": false,
+        "modeOptionsEnabled": false
+      }
+    },
+
+    "mobileFooterPanel": {
+      "options": {
+        "bookmarkEnabled": false,
+        "downloadEnabled": false,
+        "embedEnabled": false,
+        "feedbackEnabled": false,
+        "fullscreenEnabled": true,
+        "moreInfoEnabled": true,
+        "openEnabled": false,
+        "printEnabled": false,
+        "shareEnabled": false
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  color-scheme: dark;
+  font-family: "Avenir Next", Avenir, sans-serif;
+  background: #11151a;
+  color: #f2f4f5;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { width: 100%; height: 100%; margin: 0; }
+body { overflow: hidden; background: #11151a; }
+#viewer { 
+    width: 100%; height: 100%; 
+}
+#uv { 
+    width: 100%; height: 100%; 
+}
+.message {
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  background: radial-gradient(circle at 50% 35%, #26323a 0, #11151a 58%);
+}
+.message h1, .message p { margin: 0; }
+.message h1 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+.message p { max-width: 32rem; color: #b6c0c5; }
