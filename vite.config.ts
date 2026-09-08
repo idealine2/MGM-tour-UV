@@ -6,6 +6,7 @@ const configsDir = resolve(process.cwd(), "configs");
 
 export default defineConfig({
   root: "src",
+  base: "mgm-tour-app",
   publicDir: "../public",
   plugins: [{
     name: "serve-configs",
