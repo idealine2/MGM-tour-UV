@@ -76,7 +76,7 @@ async function loadViewer(): Promise<void> {
     var urlAdapter = new IIIFURLAdapter(true);
 
     const d = urlAdapter.getInitialData({
-      manifest: "https://heritage.tudelft.nl/iiif/collections/d51c775b-4472-4e6a-a952-f0f3da8aee9d/collection.json",
+      iiif_content: "https://heritage.tudelft.nl/iiif/collections/d51c775b-4472-4e6a-a952-f0f3da8aee9d/collection.json",
       embedded: true,
     });
 
