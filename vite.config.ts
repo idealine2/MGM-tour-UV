@@ -3,15 +3,16 @@ import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
 const configsDir = resolve(process.cwd(), "configs");
+const base = "/mgm-tour-app/";
 
 export default defineConfig({
   root: "src",
-  base: "mgm-tour-app",
+  base,
   publicDir: "../public",
   plugins: [{
     name: "serve-configs",
     configureServer(server) {
-      server.middlewares.use("/configs", (request, response, next) => {
+      server.middlewares.use(`${base}configs`, (request, response, next) => {
         const requestedFile = decodeURIComponent(request.url?.split("?")[0].slice(1) ?? "");
         const configFile = resolve(configsDir, requestedFile);
 

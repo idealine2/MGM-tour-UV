@@ -6,16 +6,16 @@
     "headerPanelEnabled": true,
     "footerPanelEnabled": true,
     "leftPanelEnabled": true,
-    "rightPanelEnabled": false,
+    "rightPanelEnabled": true,
 
     "navigatorEnabled": false,
+    "pagingEnabled": true,
     "searchWithinEnabled": false,
-
+    "clickToZoomEnabled": true,
     "saveUserSettings": false,
     "useArrowKeysToNavigate": false,
 
     "overrideFullScreen": false,
-
     "defaultToTreeIfCollection": true
   },
 
@@ -32,14 +32,19 @@
 
     "contentLeftPanel": {
       "options": {
-        "panelOpen": true,
+        "panelOpen": false,
 
-        "thumbsEnabled": true,
+        "thumbsEnabled": false,
         "treeEnabled": true,
         "pageModeEnabled": false,
 
         "defaultToTreeEnabled": true,
         "defaultToTreeIfGreaterThan": 0
+      }
+    },
+    "moreInfoRightPanel": {
+      "options": {
+        "panelOpen": false
       }
     },
 
@@ -49,11 +54,19 @@
         "downloadEnabled": false,
         "embedEnabled": false,
         "feedbackEnabled": false,
-        "fullscreenEnabled": true,
+        "fullscreenEnabled": false,
         "moreInfoEnabled": true,
         "openEnabled": false,
         "printEnabled": false,
         "shareEnabled": false
+      }
+    },
+    "openSeadragonCenterPanel": {
+      "content": {
+        "closeAttribution": true
+      },
+      "options": {
+        "requiredStatementEnabled": false
       }
     }
   }

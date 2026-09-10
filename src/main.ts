@@ -43,7 +43,7 @@ function isAllowedManifestUrl(value: string): boolean {
 
 
 function configUrl(value: keyof typeof configMap): string {
-  return `/configs/${configMap[value]}`;
+  return `${import.meta.env.BASE_URL}configs/${configMap[value]}`;
 }
 
 
@@ -73,17 +73,19 @@ async function loadViewer(): Promise<void> {
     if (!response.ok) throw new Error(`Unable to load config (${response.status}).`);
     const configData = await response.json();
 
-    var urlAdapter = new IIIFURLAdapter(true);
+    const urlAdapter = new IIIFURLAdapter(true);
 
     const d = urlAdapter.getInitialData({
-      iiif_content: "https://heritage.tudelft.nl/iiif/collections/d51c775b-4472-4e6a-a952-f0f3da8aee9d/collection.json",
+      iiifManifestId: manifest,
       embedded: true,
     });
 
     const uv = init("uv", d);
 
 
-    uv.on("configure", function({ _, cb }) { cb(configData); });
+    uv.on("configure", function({ cb }: { config: unknown; cb: (config: unknown) => void }) {
+      cb(configData);
+    });
 
     if (viewer) viewer.hidden = true;
     if (message) message.hidden = true;
